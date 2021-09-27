@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gemunu+Libre:wght@200&display=swap");
+.mainContainer {
+    margin: 50px 30px;
+}
+
+hr {
+    font-weight: bold;
+    height: 0.1cm;
+    color: black;
+}
+
+p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* 
+.mainContainer input {
+    width: 800px;
+    border-radius: 999px;
+    padding: 0.4em;
+    font-size: 15px;
+}
+
+.mainContainer1 input {
+    width: 800px;
+    border-width: 0px;
+    border: none;
+    padding: 0.4em;
+    font-size: 15px;
+} */
+
+#div {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#inleft {
+    width: 800px;
+    margin-top: -10px;
+}
+
+#inright {
+    width: 100px;
+    margin-top: -10px;
+}
+
+.year {
+    margin-right: 20px;
+}
+
+.warn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn1 {
+    background: purple;
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin-right: 20px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    background: white;
+    color: purple;
+    transform: scale(1.07);
+}
+
+.edtitle {
+    margin-bottom: 10px;
+    border-bottom: 5px solid black;
+}

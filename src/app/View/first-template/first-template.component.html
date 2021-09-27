@@ -1,0 +1,30 @@
+<div id="printme" class="mainContainer">
+    <div class="education">
+        <p class="edtitle">Education:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your education history </span>
+            <span class="year">Year</span>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div">
+            <li id="input">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                    <mat-form-field id="inright">
+                        <input class="animate__animated animate__fadeIn" matInput type="number" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test()">
+      add
+    </button>
+    </div>
+</div>
+<button (click)="toggle(); myFunctionToClear()">Clear Instructions</button>
+<button ngxPrint printSectionId="printme" [useExistingCss]="true">
+  Export
+</button>
