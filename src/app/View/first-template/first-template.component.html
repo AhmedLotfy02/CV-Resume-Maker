@@ -1,4 +1,10 @@
 <div id="printme" class="mainContainer">
+    <div>
+        Name:
+        <mat-form-field>
+            <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+        </mat-form-field>
+    </div>
     <div class="education">
         <p class="edtitle">Education:</p>
         <div *ngIf="show" class="warn">
@@ -23,8 +29,160 @@
       add
     </button>
     </div>
+    <br />
+    <div class="education">
+        <p class="edtitle">Experience:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your experience history </span>
+            <pre>From          To        </pre>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div2">
+            <li id="input2">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+
+                    <div class="date">
+                        <mat-form-field id="inright1">
+                            <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                        </mat-form-field>
+                        <mat-form-field id="inright1">
+                            <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                        </mat-form-field>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test2()">
+      add
+    </button>
+    </div>
+    <br *ngIf="show" />
+    <div class="education">
+        <p class="edtitle">Projects:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your project's history </span>
+            <span class="year">Date</span>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div3">
+            <li id="input3">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                    <mat-form-field id="inright">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test3()">
+      add
+    </button>
+    </div>
+    <br />
+    <br *ngIf="show" />
+    <div class="education">
+        <p class="edtitle">Courses:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your project's history </span>
+            <span class="year">Date</span>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div4">
+            <li id="input4">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                    <mat-form-field id="inright">
+                        <input class="animate__animated animate__fadeIn" matInput type="number" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test4()">
+      add
+    </button>
+    </div>
+    <br />
+    <br *ngIf="show" />
+    <div class="education">
+        <p class="edtitle">Skills:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your project's history </span>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div5">
+            <li id="input5">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test5()">
+      add
+    </button>
+    </div>
+    <br *ngIf="show" />
+    <div class="education">
+        <p class="edtitle">Languages:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your project's history </span>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div6">
+            <li id="input6">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test6()">
+      add
+    </button>
+    </div>
+    <br />
+
+    <br *ngIf="show" />
+    <div class="education">
+        <p class="edtitle">Extracurricular Activities:</p>
+        <div *ngIf="show" class="warn">
+            <span>Please enter your project's history </span>
+        </div>
+
+        <br *ngIf="show" />
+        <ul id="div7">
+            <li id="input7">
+                <div class="field">
+                    <mat-form-field id="inleft">
+                        <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                    </mat-form-field>
+                </div>
+            </li>
+        </ul>
+        <button mat-raised-button class="add btn1" *ngIf="show" (click)="test7()">
+      add
+    </button>
+    </div>
+    <br />
 </div>
-<button (click)="toggle(); myFunctionToClear()">Clear Instructions</button>
-<button ngxPrint printSectionId="printme" [useExistingCss]="true">
+<button mat-raised-button class="btnClear" (click)="toggle(); myFunctionToClear()">
+  Clear Instructions
+</button>
+<br />
+<button mat-raised-button class="btnExport" ngxPrint printSectionId="printme" [useExistingCss]="true">
   Export
 </button>
