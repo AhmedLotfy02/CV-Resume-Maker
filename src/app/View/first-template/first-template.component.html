@@ -1,8 +1,8 @@
 <div id="printme" class="mainContainer">
     <div>
-        Name:
+        <span class="name">Name:</span>
         <mat-form-field>
-            <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+            <input class="namein animate__animated animate__fadeIn" type="text" placeholder="" />
         </mat-form-field>
     </div>
     <div class="education">
@@ -182,7 +182,8 @@
 <button mat-raised-button class="btnClear" (click)="toggle(); myFunctionToClear()">
   Clear Instructions
 </button>
-<br />
-<button mat-raised-button class="btnExport" ngxPrint printSectionId="printme" [useExistingCss]="true">
+
+<button mat-raised-button class="btnExp" ngxPrint printSectionId="printme" [useExistingCss]="true">
   Export
 </button>
+<br /><br />
