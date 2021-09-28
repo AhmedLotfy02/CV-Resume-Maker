@@ -25,9 +25,10 @@ import { NgxPrintModule } from 'ngx-print';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JwPaginationModule } from 'jw-angular-pagination';
 import { FirstTemplateComponent } from './View/first-template/first-template.component';
+import { MainPageComponent } from './View/main-page/main-page.component';
 
 @NgModule({
-  declarations: [AppComponent, FirstTemplateComponent],
+  declarations: [AppComponent, FirstTemplateComponent, MainPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
