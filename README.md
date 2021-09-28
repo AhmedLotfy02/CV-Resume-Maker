@@ -7,16 +7,26 @@
   <li>
     <strong><em>  Enter your information or add new fields</strong></em>
     <br>
-  <img src="https://i.ibb.co/4fZLvBp/01.jpg" alt="01" border="0">
+    <ul>
+      <li>
+        <img src="https://i.ibb.co/4fZLvBp/01.jpg" alt="01" border="0">
+      </li>
   <br>
     <br>
     <hr>
+      <li>
     <img src="https://i.ibb.co/FxvKZbt/02.jpg" alt="02" border="0">
+      </li>
 <br>
     <br>
         <hr>
+      <br><br><br>
+      <li>
          <img src="https://i.ibb.co/JsP0DDD/03.jpg" alt="03" border="0">
+      </li>
+    </ul>
   </li>
+  <br><br><br>
    <li>
     <strong><em>Filling then click in clear instructions then click export</strong></em>
     <br>
