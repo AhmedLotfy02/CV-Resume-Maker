@@ -2,7 +2,12 @@
 
 ![CV Maker (1)](https://user-images.githubusercontent.com/76037906/135002263-fe45753f-8e03-4e81-8dc4-8267f342c42c.jpg)
 
-
+<h2>Build with</h2>
+<ul>
+    <li><a href="https://angular.io/">Angular</a></li>
+    <li><a href="https://www.npmjs.com/package/ngx-print">ngx Print</a></li>
+</ul>
+<h2>Instructions:</h2>
 <ul>
   <li>
     <strong><em>  Enter your information or add new fields</strong></em>
