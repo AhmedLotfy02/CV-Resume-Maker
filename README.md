@@ -28,7 +28,7 @@
   </li>
   <br><br><br>
    <li>
-    <strong><em>Filling then click in clear instructions then click export</strong></em>
+    <strong><em>Filling then click clear instructions then click export</strong></em>
     <br>
  <img src="https://i.ibb.co/Zhdy5gn/04.jpg" alt="04" border="0">
   <br>
