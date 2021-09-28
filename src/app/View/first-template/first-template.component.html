@@ -8,8 +8,8 @@
     <div class="education">
         <p class="edtitle">Education:</p>
         <div *ngIf="show" class="warn">
-            <span>Please enter your education history </span>
-            <span class="year">Year</span>
+            <span>Please enter your experience history </span>
+            <pre>  From          To  </pre>
         </div>
 
         <br *ngIf="show" />
@@ -19,14 +19,21 @@
                     <mat-form-field id="inleft">
                         <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
                     </mat-form-field>
-                    <mat-form-field id="inright">
-                        <input class="animate__animated animate__fadeIn" matInput type="number" placeholder="" />
-                    </mat-form-field>
+                    <div class="date">
+                        <mat-form-field id="inright1">
+                            <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                        </mat-form-field>
+                        <span class="line">__</span>
+
+                        <mat-form-field id="inright1">
+                            <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
+                        </mat-form-field>
+                    </div>
                 </div>
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br />
@@ -34,7 +41,7 @@
         <p class="edtitle">Experience:</p>
         <div *ngIf="show" class="warn">
             <span>Please enter your experience history </span>
-            <pre>From          To        </pre>
+            <pre>  From          To  </pre>
         </div>
 
         <br *ngIf="show" />
@@ -49,6 +56,8 @@
                         <mat-form-field id="inright1">
                             <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
                         </mat-form-field>
+                        <span class="line">__</span>
+
                         <mat-form-field id="inright1">
                             <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
                         </mat-form-field>
@@ -57,7 +66,7 @@
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test2()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br *ngIf="show" />
@@ -82,7 +91,7 @@
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test3()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br />
@@ -108,7 +117,7 @@
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test4()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br />
@@ -123,14 +132,14 @@
         <ul id="div5">
             <li id="input5">
                 <div class="field">
-                    <mat-form-field id="inleft">
+                    <mat-form-field id="skillin">
                         <input class="animate__animated animate__fadeIn" matInput type="text" placeholder="" />
                     </mat-form-field>
                 </div>
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test5()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br *ngIf="show" />
@@ -151,7 +160,7 @@
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test6()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br />
@@ -174,7 +183,7 @@
             </li>
         </ul>
         <button mat-raised-button class="add btn1" *ngIf="show" (click)="test7()">
-      add
+      <mat-icon>add</mat-icon>
     </button>
     </div>
     <br />
